@@ -1,6 +1,8 @@
 extends Area2D
 
 @export var impulso := -400
+@export var oscilacion := 0.5
+@export var amplitud := 30
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
