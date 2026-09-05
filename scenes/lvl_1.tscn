@@ -8,15 +8,20 @@
 
 [node name="Hazard Zone COLD" parent="." unique_id=1798013900 instance=ExtResource("1_l8iau")]
 position = Vector2(574, -4)
+motivo = "congelado"
 
 [node name="Sinker" parent="." unique_id=1434882120 instance=ExtResource("2_hwdor")]
-position = Vector2(570, 66)
+position = Vector2(574, 174)
 
 [node name="Floater" parent="." unique_id=354752659 instance=ExtResource("3_53anu")]
-position = Vector2(318, 432)
+position = Vector2(335, 411)
 
 [node name="Floater2" parent="." unique_id=480468516 instance=ExtResource("3_53anu")]
-position = Vector2(798, 449)
+position = Vector2(867, 458)
+
+[node name="Floater3" parent="." unique_id=548923180 instance=ExtResource("3_53anu")]
+position = Vector2(588, 526)
 
 [node name="Hazard Zone HOT" parent="." unique_id=1614196513 instance=ExtResource("1_l8iau")]
 position = Vector2(577, 660)
+motivo = "frito"

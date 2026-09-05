@@ -1,6 +1,12 @@
 extends CharacterBody2D
 
 @export var speed := 300.0
+var init_pos : Vector2
+var init_vel : Vector2
+
+func _ready() -> void:
+	init_pos = position
+	init_vel = velocity
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -13,3 +19,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
+	
+func morir(motivo: String):
+	position = init_pos
+	velocity = init_vel
+	print(motivo)
