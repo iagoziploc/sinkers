@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ci1rwwivx7jv5"]
+
+[ext_resource type="Script" uid="uid://0np0a7bq3cc4" path="res://scripts/hazard_zone.gd" id="1_gvd4f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_226n4"]
+size = Vector2(2300, 100)
+
+[node name="Hazard Zone" type="Area2D" unique_id=1798013900]
+script = ExtResource("1_gvd4f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1229379428]
+shape = SubResource("RectangleShape2D_226n4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

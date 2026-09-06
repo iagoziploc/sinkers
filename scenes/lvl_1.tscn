@@ -1,15 +1,44 @@
 [gd_scene format=3 uid="uid://dnnxlt8fxvwwc"]
 
+[ext_resource type="PackedScene" uid="uid://ci1rwwivx7jv5" path="res://scenes/hazard_zone.tscn" id="1_l8iau"]
 [ext_resource type="PackedScene" uid="uid://cp1hlntkdxx66" path="res://scenes/sinker.tscn" id="2_hwdor"]
 [ext_resource type="PackedScene" uid="uid://caxmye356t3ak" path="res://scenes/floater.tscn" id="3_53anu"]
 
 [node name="lvl1" type="Node2D" unique_id=1251553194]
 
+[node name="Hazard Zone COLD" parent="." unique_id=1798013900 instance=ExtResource("1_l8iau")]
+position = Vector2(574, -51)
+motivo = "congelado"
+
 [node name="Sinker" parent="." unique_id=1434882120 instance=ExtResource("2_hwdor")]
-position = Vector2(570, 66)
+position = Vector2(574, 114)
+speed = 300.0
 
 [node name="Floater" parent="." unique_id=354752659 instance=ExtResource("3_53anu")]
-position = Vector2(428, 570)
+position = Vector2(301, 377)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
 
 [node name="Floater2" parent="." unique_id=480468516 instance=ExtResource("3_53anu")]
-position = Vector2(908, 587)
+position = Vector2(1000, 408)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
+
+[node name="Floater3" parent="." unique_id=548923180 instance=ExtResource("3_53anu")]
+position = Vector2(648, 523)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
+
+[node name="Floater4" parent="." unique_id=1051578902 instance=ExtResource("3_53anu")]
+position = Vector2(126, 158)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
+
+[node name="Floater5" parent="." unique_id=2100018141 instance=ExtResource("3_53anu")]
+position = Vector2(448, 236)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
+
+[node name="Hazard Zone HOT" parent="." unique_id=1614196513 instance=ExtResource("1_l8iau")]
+position = Vector2(579, 695)
+motivo = "frito"

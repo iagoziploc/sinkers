@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var impulso := -400
+@export var motivo := "zona de peligro"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,7 +11,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("sinker"):
-		body.velocity.y = impulso
+		body.morir(motivo)
