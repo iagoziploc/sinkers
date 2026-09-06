@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://caxmye356t3ak"]
 
-[ext_resource type="Script" uid="uid://dmjhamk7ou3cs" path="res://scenes/floater.gd" id="1_3ufdn"]
+[ext_resource type="Script" uid="uid://dmjhamk7ou3cs" path="res://scripts/floater.gd" id="1_3ufdn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_226n4"]
 size = Vector2(100, 20)
 
 [node name="Floater" type="Area2D" unique_id=354752659]
 script = ExtResource("1_3ufdn")
-impulso = -600
+impulso = -700
+oscilacion = 0.6
+amplitud = 40
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=799871050]
 shape = SubResource("RectangleShape2D_226n4")

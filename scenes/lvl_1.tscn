@@ -12,21 +12,32 @@ motivo = "congelado"
 
 [node name="Sinker" parent="." unique_id=1434882120 instance=ExtResource("2_hwdor")]
 position = Vector2(574, 114)
+speed = 300.0
 
 [node name="Floater" parent="." unique_id=354752659 instance=ExtResource("3_53anu")]
 position = Vector2(301, 377)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
 
 [node name="Floater2" parent="." unique_id=480468516 instance=ExtResource("3_53anu")]
 position = Vector2(1000, 408)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
 
 [node name="Floater3" parent="." unique_id=548923180 instance=ExtResource("3_53anu")]
 position = Vector2(648, 523)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
 
 [node name="Floater4" parent="." unique_id=1051578902 instance=ExtResource("3_53anu")]
 position = Vector2(126, 158)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
 
 [node name="Floater5" parent="." unique_id=2100018141 instance=ExtResource("3_53anu")]
 position = Vector2(448, 236)
+oscilacion = Vector2(0.3, 0.6)
+amplitud = Vector2(15, 40)
 
 [node name="Hazard Zone HOT" parent="." unique_id=1614196513 instance=ExtResource("1_l8iau")]
 position = Vector2(579, 695)

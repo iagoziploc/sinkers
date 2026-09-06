@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://cp1hlntkdxx66"]
 
-[ext_resource type="Script" uid="uid://d8j41d0xcovr" path="res://scenes/sinker.gd" id="1_sc2j5"]
+[ext_resource type="Script" uid="uid://d8j41d0xcovr" path="res://scripts/sinker.gd" id="1_sc2j5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sc2j5"]
 radius = 7.071068
 
 [node name="Sinker" type="CharacterBody2D" unique_id=1434882120 groups=["sinker"]]
 script = ExtResource("1_sc2j5")
-speed = 400.0
+speed = 200.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=269423039]
 shape = SubResource("CircleShape2D_sc2j5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2034046494]
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
