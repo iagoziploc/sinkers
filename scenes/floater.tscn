@@ -2,16 +2,15 @@
 
 [ext_resource type="Script" uid="uid://dmjhamk7ou3cs" path="res://scripts/floater.gd" id="1_3ufdn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_226n4"]
-size = Vector2(100, 20)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_amnbx"]
+radius = 25.0
+height = 75.0
 
 [node name="Floater" type="Area2D" unique_id=354752659]
 script = ExtResource("1_3ufdn")
 impulso = -700
-oscilacion = 0.6
-amplitud = 40
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=799871050]
-shape = SubResource("RectangleShape2D_226n4")
+shape = SubResource("CapsuleShape2D_amnbx")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

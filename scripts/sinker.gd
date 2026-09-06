@@ -23,4 +23,3 @@ func _physics_process(delta: float) -> void:
 func morir(motivo: String):
 	position = init_pos
 	velocity = init_vel
-	print(motivo)

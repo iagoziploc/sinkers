@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b1jxumahp8boe"]
+
+[ext_resource type="Script" uid="uid://tqq8x362nxmj" path="res://scripts/hunter.gd" id="1_660ry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqn2u"]
+size = Vector2(30, 10)
+
+[node name="Hunter" type="CharacterBody2D" unique_id=421298682 groups=["hunter"]]
+script = ExtResource("1_660ry")
+idle_speed = 150.0
+target_speed = 300
+hunt_interval = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=834157035]
+shape = SubResource("RectangleShape2D_fqn2u")

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ci1rwwivx7jv5" path="res://scenes/hazard_zone.tscn" id="1_l8iau"]
 [ext_resource type="PackedScene" uid="uid://cp1hlntkdxx66" path="res://scenes/sinker.tscn" id="2_hwdor"]
 [ext_resource type="PackedScene" uid="uid://caxmye356t3ak" path="res://scenes/floater.tscn" id="3_53anu"]
+[ext_resource type="PackedScene" uid="uid://b1jxumahp8boe" path="res://scenes/hunter.tscn" id="4_hwdor"]
 
 [node name="lvl1" type="Node2D" unique_id=1251553194]
 
@@ -15,29 +16,31 @@ position = Vector2(574, 114)
 speed = 300.0
 
 [node name="Floater" parent="." unique_id=354752659 instance=ExtResource("3_53anu")]
-position = Vector2(301, 377)
-oscilacion = Vector2(0.3, 0.6)
-amplitud = Vector2(15, 40)
+position = Vector2(259, 445)
 
 [node name="Floater2" parent="." unique_id=480468516 instance=ExtResource("3_53anu")]
 position = Vector2(1000, 408)
-oscilacion = Vector2(0.3, 0.6)
-amplitud = Vector2(15, 40)
 
 [node name="Floater3" parent="." unique_id=548923180 instance=ExtResource("3_53anu")]
-position = Vector2(648, 523)
-oscilacion = Vector2(0.3, 0.6)
-amplitud = Vector2(15, 40)
+position = Vector2(688, 532)
 
 [node name="Floater4" parent="." unique_id=1051578902 instance=ExtResource("3_53anu")]
-position = Vector2(126, 158)
-oscilacion = Vector2(0.3, 0.6)
-amplitud = Vector2(15, 40)
+position = Vector2(143, 172)
 
 [node name="Floater5" parent="." unique_id=2100018141 instance=ExtResource("3_53anu")]
-position = Vector2(448, 236)
-oscilacion = Vector2(0.3, 0.6)
-amplitud = Vector2(15, 40)
+position = Vector2(451, 247)
+
+[node name="Hunter" parent="." unique_id=421298682 instance=ExtResource("4_hwdor")]
+position = Vector2(822, 226)
+
+[node name="Hunter2" parent="." unique_id=380665255 instance=ExtResource("4_hwdor")]
+position = Vector2(284, 112)
+
+[node name="Hunter3" parent="." unique_id=538658314 instance=ExtResource("4_hwdor")]
+position = Vector2(897, 526)
+
+[node name="Hunter4" parent="." unique_id=1068876476 instance=ExtResource("4_hwdor")]
+position = Vector2(402, 515)
 
 [node name="Hazard Zone HOT" parent="." unique_id=1614196513 instance=ExtResource("1_l8iau")]
 position = Vector2(579, 695)
