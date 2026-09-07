@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 
 @export var idle_speed := 150.0
-@export var target_speed := 300
-@export var hunt_interval := 10
+@export var target_speed := 300.0
+@export var hunt_interval := 10.0
 var direccion := Vector2.from_angle(randf_range(0, TAU))
 var tiempo : float
 

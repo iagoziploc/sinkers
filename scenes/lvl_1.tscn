@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://dnnxlt8fxvwwc"]
 
-[ext_resource type="PackedScene" uid="uid://ci1rwwivx7jv5" path="res://scenes/hazard_zone.tscn" id="1_l8iau"]
+[ext_resource type="PackedScene" uid="uid://ck8myd7p22apt" path="res://scenes/limite.tscn" id="1_hwdor"]
 [ext_resource type="PackedScene" uid="uid://cp1hlntkdxx66" path="res://scenes/sinker.tscn" id="2_hwdor"]
 [ext_resource type="PackedScene" uid="uid://caxmye356t3ak" path="res://scenes/floater.tscn" id="3_53anu"]
 [ext_resource type="PackedScene" uid="uid://b1jxumahp8boe" path="res://scenes/hunter.tscn" id="4_hwdor"]
 
 [node name="lvl1" type="Node2D" unique_id=1251553194]
 
-[node name="Hazard Zone COLD" parent="." unique_id=1798013900 instance=ExtResource("1_l8iau")]
-position = Vector2(574, -51)
+[node name="Límite COLD" parent="." unique_id=1338006119 instance=ExtResource("1_hwdor")]
+position = Vector2(574, -75)
+
+[node name="Hazard Zone" parent="Límite COLD" index="0" unique_id=1798013900]
 motivo = "congelado"
 
 [node name="Sinker" parent="." unique_id=1434882120 instance=ExtResource("2_hwdor")]
@@ -32,16 +34,30 @@ position = Vector2(451, 247)
 
 [node name="Hunter" parent="." unique_id=421298682 instance=ExtResource("4_hwdor")]
 position = Vector2(822, 226)
+target_speed = 300.0
+hunt_interval = 10.0
 
 [node name="Hunter2" parent="." unique_id=380665255 instance=ExtResource("4_hwdor")]
 position = Vector2(284, 112)
+target_speed = 300.0
+hunt_interval = 10.0
 
 [node name="Hunter3" parent="." unique_id=538658314 instance=ExtResource("4_hwdor")]
 position = Vector2(897, 526)
+target_speed = 300.0
+hunt_interval = 10.0
 
 [node name="Hunter4" parent="." unique_id=1068876476 instance=ExtResource("4_hwdor")]
 position = Vector2(402, 515)
+target_speed = 300.0
+hunt_interval = 10.0
 
-[node name="Hazard Zone HOT" parent="." unique_id=1614196513 instance=ExtResource("1_l8iau")]
-position = Vector2(579, 695)
+[node name="Límite HOT" parent="." unique_id=439375117 instance=ExtResource("1_hwdor")]
+position = Vector2(574, 726)
+rotation = 3.1415927
+
+[node name="Hazard Zone" parent="Límite HOT" index="0" unique_id=1798013900]
 motivo = "frito"
+
+[editable path="Límite COLD"]
+[editable path="Límite HOT"]
