@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://0np0a7bq3cc4" path="res://scripts/hazard_zone.gd" id="1_gvd4f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_226n4"]
-size = Vector2(2300, 100)
+size = Vector2(3840, 100)
 
 [node name="Hazard Zone" type="Area2D" unique_id=1798013900]
 script = ExtResource("1_gvd4f")

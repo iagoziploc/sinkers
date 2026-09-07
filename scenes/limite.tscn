@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ck8myd7p22apt"]
+
+[ext_resource type="PackedScene" uid="uid://ci1rwwivx7jv5" path="res://scenes/hazard_zone.tscn" id="1_xex3x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_226n4"]
+size = Vector2(3840, 50)
+
+[node name="Límite" type="Node2D" unique_id=1338006119]
+
+[node name="Hazard Zone" parent="." unique_id=1798013900 instance=ExtResource("1_xex3x")]
+
+[node name="Pared" type="StaticBody2D" parent="." unique_id=749885832]
+position = Vector2(0, -75)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pared" unique_id=369856388]
+shape = SubResource("RectangleShape2D_226n4")
