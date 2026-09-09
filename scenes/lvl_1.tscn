@@ -34,19 +34,15 @@ position = Vector2(451, 247)
 
 [node name="Hunter" parent="." unique_id=421298682 instance=ExtResource("4_hwdor")]
 position = Vector2(822, 226)
-hunt_interval = 10.0
 
 [node name="Hunter2" parent="." unique_id=380665255 instance=ExtResource("4_hwdor")]
 position = Vector2(284, 112)
-hunt_interval = 10.0
 
 [node name="Hunter3" parent="." unique_id=538658314 instance=ExtResource("4_hwdor")]
 position = Vector2(897, 526)
-hunt_interval = 10.0
 
 [node name="Hunter4" parent="." unique_id=1068876476 instance=ExtResource("4_hwdor")]
 position = Vector2(402, 515)
-hunt_interval = 10.0
 
 [node name="Límite HOT" parent="." unique_id=439375117 instance=ExtResource("1_hwdor")]
 position = Vector2(574, 726)

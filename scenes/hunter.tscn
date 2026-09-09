@@ -6,8 +6,8 @@
 size = Vector2(30, 10)
 
 [node name="Hunter" type="CharacterBody2D" unique_id=421298682 groups=["hunter"]]
+collision_mask = 0
 script = ExtResource("1_660ry")
-hunt_interval = 20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=834157035]
 shape = SubResource("RectangleShape2D_fqn2u")
