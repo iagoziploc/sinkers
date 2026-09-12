@@ -1,5 +1,6 @@
 extends Area2D
 
+signal murio(posicion: Vector2)
 var tiempo : float
 # posición e impulso al sinker
 @export var impulso := -400
@@ -28,4 +29,5 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("sinker"):
 		body.velocity.y = impulso
 	if body.is_in_group("hunter") and body.objetivo == self:
+		murio.emit(position)
 		queue_free()

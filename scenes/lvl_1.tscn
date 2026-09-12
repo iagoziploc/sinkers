@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://dnnxlt8fxvwwc"]
 
+[ext_resource type="Script" uid="uid://dpve0repe55xt" path="res://scenes/lvl_1.gd" id="1_53anu"]
 [ext_resource type="PackedScene" uid="uid://ck8myd7p22apt" path="res://scenes/limite.tscn" id="1_hwdor"]
 [ext_resource type="PackedScene" uid="uid://cp1hlntkdxx66" path="res://scenes/sinker.tscn" id="2_hwdor"]
 [ext_resource type="PackedScene" uid="uid://caxmye356t3ak" path="res://scenes/floater.tscn" id="3_53anu"]
 [ext_resource type="PackedScene" uid="uid://b1jxumahp8boe" path="res://scenes/hunter.tscn" id="4_hwdor"]
 
 [node name="lvl1" type="Node2D" unique_id=1251553194]
+script = ExtResource("1_53anu")
 
 [node name="Límite COLD" parent="." unique_id=1338006119 instance=ExtResource("1_hwdor")]
 position = Vector2(574, -75)
